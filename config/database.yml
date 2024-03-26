@@ -21,10 +21,13 @@ default: &default
   username: vagrant
   password: <%= ENV['goals_DATABASE_PASSWORD'] %>
 
-
 development:
   <<: *default
   database: goals_development
+
+test:
+  <<: *default
+  database: goals_test
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
