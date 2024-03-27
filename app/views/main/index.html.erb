@@ -1,5 +1,7 @@
 <h1>Goals</h1>
 <p>Set and accomplish your goals</p>
 
-<a href="/tasks/index">Tasks 1</a><br />
-<%= link_to('Tasks 2',{controller: 'tasks', action: 'index'}) %><br />
+<%= link_to('Goals',{controller: 'tasks', action: 'index', page: 1}) %><br />
+
+<!-- Rails link with parameters -->
+<%= link_to('About',{action: 'about', page:5, id: 20}) %><br />
