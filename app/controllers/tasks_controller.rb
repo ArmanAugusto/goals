@@ -1,7 +1,7 @@
 class TasksController < ApplicationController
   def index
     @page = params[:page].to_i
-    @goals = ['Learn Ruby', 'Update metrics data', 'Learn Kubernetes', 'Learn Rust']
+    @goals = ['Learn Ruby', 'Update metrics data', 'Learn Kubernetes', 'Learn Go', 'Learn Rust']
   end
 
   def new
